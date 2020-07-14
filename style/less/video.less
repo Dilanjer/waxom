@@ -1,0 +1,76 @@
+// main: ../style.less
+
+.video{
+  margin: 80px 0;
+}
+.video__inner{
+  height: 700px;
+  max-height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+.video__inner:after{
+  position: absolute;
+  display: block;
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+
+  background: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.video__bg{
+  width: 100%;
+  transform: translateY(-10%);
+}
+.video__play{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.play__img{
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  border-radius: 50%; 
+}
+.play__img:hover{
+  cursor: pointer;
+}
+
+.video__text{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.video__title{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 25px;      
+}
+.video__parag{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  width: 600px;
+  margin: 0 auto;
+}
+.video__time{
+  color: #c7b299;
+  font-weight: 400;
+  margin-top: 40px;
+}
